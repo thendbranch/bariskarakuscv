@@ -1,0 +1,248 @@
+nav {
+    margin: 27px auto 0;  
+    position: relative;
+    width: 800px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 150px;
+  }
+  a:nth-child(2) {
+    width: 220px;
+  }
+  a:nth-child(3) {
+    width: 250px;
+  }
+  a:nth-child(4) {
+    width: 180px;
+  }
+  
+  nav .start-home, a:nth-child(1):hover~.animation {
+    width: 150px;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  nav .start-about, a:nth-child(2):hover~.animation {
+    width: 220px;
+    left: 150px;
+    background-color: #e74c3c;
+  }
+  nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 250px;
+    left: 370px;
+    background-color: #3498db;
+  }
+  nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 180px;
+    left: 620px;
+    background-color: #9b59b6;
+  }
+ 
+  
+  body {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #2c3e50;
+  }
+  h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+  }
+  
+  #oz {
+    margin: 20px auto 0;
+    display: flex;
+
+  }
+  #oz img {
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+    margin-left: 80px;
+    margin-right: 60px; 
+    border-color: black;
+    border-style: dotted;
+    border-width: 3px;
+  }
+  #oz p {
+    margin-right: 240px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash', cursive;
+    line-height: 1.8;
+
+  }
+
+  h2{
+    text-align:left;
+    margin: 40px 0 20px 100px;
+    font-size: 24px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+  }
+
+  h3{
+    text-align:left;
+    margin: 10px 0 0 100px;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+  }
+
+  ul{
+    list-style-type: none;
+    
+  }
+  li{
+    display:inline;
+    font-size: 16px;
+    color: #ecf0f1;
+  }
+
+  #tarih {
+    text-align: right;
+    margin-right: 100px; ;
+  }
+  
+
+  #deneyim .acik {
+    
+    margin: 4px 350px 40px 150px;
+    font-size: 15px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+    line-height: 1.5;
+  }
+  #Egitim .acik {
+    
+    margin: 4px 350px 40px 150px;
+    font-size: 15px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+    line-height: 1.5;
+  }
+
+  #Egitim  a{
+    color: #ecf0f1;
+    font-family: 'Cherry Swash', cursive;
+  }
+  #Egitim a :hover {
+    font-family: 'Cherry Swash', cursive;
+    background-color: #ecf0f1;
+    color: #000000;
+  }
+
+#kurs table td {
+  padding: 20px;
+  font-size: 15px;
+  color: #ecf0f1;
+  line-height: 1.5;
+}
+
+#kurs table td img {
+  border-radius: 10px;
+  width: 90px;
+}
+
+#kurs table th{
+  padding-top: px;
+  font-size: 15px;
+  color: #ecf0f1;
+  line-height: 1.5;
+  text-align: center;
+}
+#kurs tr td a{  
+  color: #ecf0f1;
+  font-family: 'Cherry Swash', cursive;
+}
+#kurs tr td a:hover{  
+  font-family: 'Cherry Swash', cursive;
+  background-color: #ecf0f1;
+  color: #000000;
+}
+
+#bec th{
+  padding-top: px;
+  font-size: 15px;
+  color: #ecf0f1;
+  line-height: 1.5;
+  text-align: center;
+}
+#bec table td{
+  padding: 20px;
+  font-size: 15px;
+  color: #ecf0f1;
+  line-height: 1.5;
+}
+#ucbas {
+  display: flex;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+#ucbas table{
+ margin: 20px;
+}
+
+
+#ucbas img {
+  border-width: 2px;
+    
+  background-color:#1abc9c;
+  border-radius: 10px;
+  width: 40px;
+}
+
+#ucbas table td{
+  font-size: 15px;
+  color: #ecf0f1;
+  line-height: 1.5;
+}
+#ucbas table th{
+  
+  font-size: 15px;
+  color: #ecf0f1;
+  line-height: 1.5;
+  text-align: center;
+}
+#ucbas tr td a{  
+  color: #ecf0f1;
+  font-family: 'Cherry Swash', cursive;
+}
+
