@@ -1,7 +1,7 @@
 nav {
     margin: 27px auto 0;  
     position: relative;
-    width: 800px;
+    width: 620px;
     height: 50px;
     background-color: #34495e;
     border-radius: 8px;
@@ -37,30 +37,24 @@ nav {
   a:nth-child(3) {
     width: 250px;
   }
-  a:nth-child(4) {
-    width: 180px;
-  }
   
-  nav .start-home, a:nth-child(1):hover~.animation {
+  
+  nav .start-hakkimda, a:nth-child(1):hover~.animation {
     width: 150px;
     left: 0;
     background-color: #1abc9c;
   }
-  nav .start-about, a:nth-child(2):hover~.animation {
+  nav .start-bjproje, a:nth-child(2):hover~.animation {
     width: 220px;
     left: 150px;
     background-color: #e74c3c;
   }
-  nav .start-blog, a:nth-child(3):hover~.animation {
+  nav .start-yjproje, a:nth-child(3):hover~.animation {
     width: 250px;
     left: 370px;
     background-color: #3498db;
   }
-  nav .start-portefolio, a:nth-child(4):hover~.animation {
-    width: 180px;
-    left: 620px;
-    background-color: #9b59b6;
-  }
+  
  
   
   body {
@@ -245,8 +239,216 @@ nav {
   font-family: 'Cherry Swash', cursive;
 }
 
+
 @media screen and (max-width:880px) {
   nav {
-    visibility: hidden;
+    margin: 27px auto 0;  
+    position: relative;
+    width: 320px;
+    height: 20px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  nav a {
+    line-height: 20px;
+    height: 100%;
+    font-size: 8px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+  nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 70px;
+  }
+  a:nth-child(2) {
+    width: 110px;
+  }
+  a:nth-child(3) {
+    width: 140px;
+  }
+  
+  
+  nav .start-hakkimda, a:nth-child(1):hover~.animation {
+    width: 70px;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  nav .start-bjproje, a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 70px;
+    background-color: #e74c3c;
+  }
+  nav .start-yjproje, a:nth-child(3):hover~.animation {
+    width: 140px;
+    left: 180px;
+    background-color: #3498db;
+  }
+
+
+  h1 {
+    text-align:left;
+    margin: auto;
+    
+    font-size: 20px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Times New Roman', Times, serif
+  }
+
+  h2{
+    text-align:left;
+    margin: auto;
+    font-size: 14px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h3{
+    text-align:left;
+    margin: auto;
+    font-size: 12px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #tarih {
+    text-align: right;
+    margin: auto;
+    
+  }
+
+  ul{
+    list-style-type: none;
+    
+  }
+  li{
+    display:inline;
+    font-size: 10px;
+    color: #ecf0f1;
+    
+  }
+
+  #oz img {
+    width: 100px;
+    height: 120px;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 10px; 
+    margin-top: 60px;
+    border-color: black;
+    border-style: dotted;
+    border-width: 3px;
+  }
+
+  #oz p {
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #ecf0f1;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.2;
+  }
+
+  #deneyim .acik {
+    
+    margin:auto;
+    font-size: 10px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family:  'Times New Roman', Times, serif;
+    line-height: 1.2;
+  }
+  #Egitim .acik {
+    
+    margin: auto;
+    font-size: 10px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
+  }
+  #kurs table td {
+    padding: 2px;
+    font-size: 8px;
+    color: #ecf0f1;
+    line-height: 1.2;
+  }
+  
+  #kurs table td img {
+    border-radius: 10px;
+    width: 20px;
+  }
+  
+  #kurs table th{
+    font-size: 10px;
+    color: #ecf0f1;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  #bec th{
+    font-size: 10px;
+    color: #ecf0f1;
+    line-height: 1.2;
+    text-align: center;
+  }
+  #bec table td{
+    padding: 8px;
+    font-size: 10px;
+    color: #ecf0f1;
+    line-height: 1.5;
+  }
+  #ucbas {
+    display:block;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+  }
+  #ucbas table{
+   margin: auto;
+   margin-top: 10px;
+  }
+  
+  
+  #ucbas img {
+    border-width: 2px;
+    background-color:#1abc9c;
+    border-radius: 10px;
+    width: 20px;
+  }
+  
+  #ucbas table td{
+    font-size: 12px;
+    color: #ecf0f1;
+    line-height: 1.2;
+  }
+  #ucbas table th{
+    
+    font-size: 14px;
+    color: #ecf0f1;
+    line-height: 1.2;
+    text-align: center;
+  }
+  #ucbas tr td a{  
+    color: #ecf0f1;
+    font-family: 'Times New Roman', Times, serif;
   }
 }

@@ -1,7 +1,7 @@
 nav {
     margin: 27px auto 0;  
     position: relative;
-    width: 800px;
+    width: 620px;
     height: 50px;
     background-color: #34495e;
     border-radius: 8px;
@@ -37,30 +37,24 @@ nav {
   a:nth-child(3) {
     width: 250px;
   }
-  a:nth-child(4) {
-    width: 180px;
-  }
+
   
-  nav .start-home, a:nth-child(1):hover~.animation {
+  nav .start-hakkimda, a:nth-child(1):hover~.animation {
     width: 150px;
     left: 0;
     background-color: #1abc9c;
   }
-  nav .start-about, a:nth-child(2):hover~.animation {
+  nav .start-bjproje, a:nth-child(2):hover~.animation {
     width: 220px;
     left: 150px;
     background-color: #e74c3c;
   }
-  nav .start-blog, a:nth-child(3):hover~.animation {
+  nav .start-yjproje, a:nth-child(3):hover~.animation {
     width: 250px;
     left: 370px;
     background-color: #3498db;
   }
-  nav .start-portefolio, a:nth-child(4):hover~.animation {
-    width: 180px;
-    left: 620px;
-    background-color: #9b59b6;
-  }
+ 
  
   
   body {
@@ -130,4 +124,128 @@ nav {
     color: #ecf0f1;
     margin-bottom: 20px;
     margin-right: 5px;
+  }
+
+  @media screen and (max-width:880px){
+    nav {
+      margin: 27px auto 0;  
+      position: relative;
+      width: 320px;
+      height: 20px;
+      background-color: #34495e;
+      border-radius: 8px;
+      font-size: 0;
+      margin-bottom: 15px;
+    }
+    nav a {
+      line-height: 20px;
+      height: 100%;
+      font-size: 8px;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      cursor: pointer;
+    }
+    nav .animation {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      z-index: 0;
+      transition: all .5s ease 0s;
+      border-radius: 8px;
+    }
+    a:nth-child(1) {
+      width: 70px;
+    }
+    a:nth-child(2) {
+      width: 110px;
+    }
+    a:nth-child(3) {
+      width: 140px;
+    }
+    
+    
+    nav .start-hakkimda, a:nth-child(1):hover~.animation {
+      width: 70px;
+      left: 0;
+      background-color: #1abc9c;
+    }
+    nav .start-bjproje, a:nth-child(2):hover~.animation {
+      width: 110px;
+      left: 70px;
+      background-color: #e74c3c;
+    }
+    nav .start-yjproje, a:nth-child(3):hover~.animation {
+      width: 140px;
+      left: 180px;
+      background-color: #3498db;
+    }
+
+    h3{
+      text-align:left;
+      margin: auto;
+      font-size: 12px;
+      color: #ecf0f1;
+      text-shadow: 2px 2px 4px #000000;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  
+    #bj img{
+      width: 80px;
+      height: 100px;
+      margin-top: 5px;
+      padding: 5px;
+      
+      border-radius: 3px;
+      background-color: #e74c3c;
+      
+  
+      position: relative;
+      transition: all .3s ease-in;
+      -moz-transition: all .3s ease-in;
+      -webkit-transition: all .3s ease-in;
+      -ms-transition: all .2s ease-in;
+      
+    }
+  
+    #bj img:hover{
+      z-index:4;
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);  
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  
+    #bjaciklamalar{
+      width: 270px;
+      height: 350px;
+      border:#e74c3c;
+      border-width: 2px;
+      border-style:double;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      overflow-x: hidden; 
+      overflow-y: scroll;
+  
+    }
+  
+  
+    ul{
+      list-style-type:circle;
+      
+    }
+    li{
+      line-height: 1.2;    
+      font-size: 10px;
+      color: #ecf0f1;
+      margin-bottom: 5px;
+      margin-right: 5px;
+    }
+  
   }
