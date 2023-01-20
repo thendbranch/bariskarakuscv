@@ -77,6 +77,24 @@ nav {
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Cherry Swash', cursive;
   }
+
+  h2{
+    text-align:left;
+    margin: 40px 0 20px 100px;
+    font-size: 24px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+  }
+
+  h3{
+    text-align:left;
+    margin: 10px 0 0 100px;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+  }
   
   #oz {
     margin: 20px auto 0;
@@ -101,25 +119,6 @@ nav {
     color: #ecf0f1;
     font-family: 'Cherry Swash', cursive;
     line-height: 1.8;
-
-  }
-
-  h2{
-    text-align:left;
-    margin: 40px 0 20px 100px;
-    font-size: 24px;
-    color: #ecf0f1;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: 'Cherry Swash', cursive;
-  }
-
-  h3{
-    text-align:left;
-    margin: 10px 0 0 100px;
-    font-size: 16px;
-    color: #ecf0f1;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: 'Cherry Swash', cursive;
   }
 
   ul{
@@ -246,3 +245,8 @@ nav {
   font-family: 'Cherry Swash', cursive;
 }
 
+@media screen and (max-width:880px) {
+  nav {
+    visibility: hidden;
+  }
+}

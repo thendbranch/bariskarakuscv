@@ -69,6 +69,15 @@ nav {
     background: #2c3e50;
   }
 
+  h3{
+    text-align:left;
+    margin: 10px 0 0 100px;
+    font-size: 24px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+  }
+
   #bj img{
     width: 380px;
     height: 430px;
@@ -110,14 +119,6 @@ nav {
 
   }
 
-  h3{
-    text-align:left;
-    margin: 10px 0 0 100px;
-    font-size: 24px;
-    color: #ecf0f1;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: 'Cherry Swash', cursive;
-  }
 
   ul{
     list-style-type:circle;
