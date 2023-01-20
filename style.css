@@ -238,7 +238,9 @@ nav {
   color: #ecf0f1;
   font-family: 'Cherry Swash', cursive;
 }
-
+.hr{
+  width: 600px;
+}
 
 @media screen and (max-width:880px) {
   nav {
@@ -450,5 +452,8 @@ nav {
   #ucbas tr td a{  
     color: #ecf0f1;
     font-family: 'Times New Roman', Times, serif;
+  }
+  .hr{
+    width: 250px;
   }
 }
